@@ -1,0 +1,17 @@
+{
+  "name": "Ubuntu 22.04 Desktop VM",
+  "image": "://microsoft.com",
+  "features": {
+    "ghcr.io/devcontainers/features/desktop-lite:1": {
+      "version": "latest",
+      "password": "vncpassword"
+    }
+  },
+  "forwardPorts": [6080, 5901],
+  "portsAttributes": {
+    "6080": {
+      "label": "Ubuntu Desktop (Web VNC)",
+      "onAutoForward": "openBrowser"
+    }
+  }
+}
